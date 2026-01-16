@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: movebox 2s infinite;
+        }
+
+        @keyframes movebox {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(80, 16, 110);
+            animation: rotatebox 4s infinite linear;
+        }
+
+        @keyframes rotatebox {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(400deg);
+            }
+
+        }
+
+        .two {
+
+            width: 100px;
+            height: 100px;
+            background-color: rgb(24, 232, 159);
+            animation: scalebox 4s infinite;
+        }
+        @keyframes scalebox{
+            0%{
+                transform: scale(0);
+            } 
+            50%{
+            transform:scale(2) ;
+        }
+        100%{
+            transform: scale(1);
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <p> Animation</p>
+    <div class="box"></div>
+    <p> Animation for rotation</p>
+    <div class="one"></div>
+    <p>Animation for scale </p>
+    <div class="two"></div>
+
+</body>
+
+</html>
